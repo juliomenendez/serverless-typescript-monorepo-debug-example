@@ -1,9 +1,11 @@
-service: serverless-typescript-monorepo-debug-example
+service: serverless-typescript-monorepo-debug-example-handler1
 
 custom:
   webpack:
     webpackConfig: ./webpack.config.js
-    includeModules: true
+    includeModules:
+      forceExclude:
+        - aws-sdk
 
 provider:
   name: aws
@@ -20,3 +22,8 @@ functions:
 plugins:
   - serverless-webpack
   - serverless-offline
+
+package:
+  exclude:
+    - .git/**
+    - tests/**

@@ -1,0 +1,12 @@
+{
+  "name": "handler1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serverless offline -s dev",
+    "build": "tsc -b"
+  },
+  "author": "",
+  "license": "ISC"
+}
