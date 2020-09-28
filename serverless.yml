@@ -1,12 +1,17 @@
 service: serverless-typescript-monorepo-debug-example
 
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+
 provider:
   name: aws
   runtime: nodejs12.x
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/handler.hello
     events:
       - http:
           path: /
