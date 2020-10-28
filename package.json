@@ -2,17 +2,18 @@
   "name": "serverless-typescript-monorepo-debug-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "services/*"
     ]
   },
   "scripts": {
     "build": "lerna run build",
     "lint": "eslint . --ext .ts",
-    "create-service": "hygen service new"
+    "create-service": "hygen service new",
+    "create-package": "hygen package new"
   },
   "author": "",
   "license": "ISC",

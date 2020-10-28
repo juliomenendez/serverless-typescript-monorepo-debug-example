@@ -9,7 +9,7 @@ skip_if: "Launch <%= name %>"
         "request": "launch",
         "name": "Launch <%= name %>",
         "skipFiles": ["<node_internals>/**"],
-        "cwd": "${workspaceFolder}/packages/<%= h.changeCase.paramCase(name) %>",
+        "cwd": "${workspaceFolder}/services/<%= h.changeCase.paramCase(name) %>",
         "program": "${workspaceRoot}/node_modules/serverless/bin/serverless",
         "args": ["offline", "--noTimeout", "--dontPrintOutput", "--stage=dev"],
         "sourceMaps": true,

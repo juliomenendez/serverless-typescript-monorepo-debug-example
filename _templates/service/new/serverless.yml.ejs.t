@@ -1,5 +1,5 @@
 ---
-to: packages/<%= h.changeCase.paramCase(name) %>/serverless.yml
+to: services/<%= h.changeCase.paramCase(name) %>/serverless.yml
 ---
 service: <%= h.changeCase.paramCase(name) %>
 

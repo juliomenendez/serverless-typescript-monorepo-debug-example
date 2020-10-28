@@ -1,5 +1,5 @@
 ---
-to: packages/<%= h.changeCase.paramCase(name) %>/src/handler.ts
+to: services/<%= h.changeCase.paramCase(name) %>/src/handler.ts
 ---
 import { Handler } from 'aws-lambda';
 

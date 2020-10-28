@@ -1,5 +1,5 @@
 ---
-to: packages/<%= h.changeCase.paramCase(name) %>/webpack.config.js
+to: services/<%= h.changeCase.paramCase(name) %>/webpack.config.js
 ---
 /* eslint-disable @typescript-eslint/no-var-requires */
 const slsw = require("serverless-webpack");

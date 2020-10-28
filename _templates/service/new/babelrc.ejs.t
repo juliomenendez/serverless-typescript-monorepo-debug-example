@@ -1,5 +1,5 @@
 ---
-to: packages/<%= h.changeCase.paramCase(name) %>/.babelrc
+to: services/<%= h.changeCase.paramCase(name) %>/.babelrc
 ---
 {
   "presets": [

@@ -1,6 +1,6 @@
 ---
-to: packages/<%= h.changeCase.paramCase(name) %>/package.json
-sh: cd packages/<%= h.changeCase.paramCase(name) %> && yarn install
+to: services/<%= h.changeCase.paramCase(name) %>/package.json
+sh: cd services/<%= h.changeCase.paramCase(name) %> && yarn install
 ---
 {
   "name": "<%= name %>",
