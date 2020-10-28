@@ -17,6 +17,7 @@
     "noUnusedParameters": false,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "importHelpers": true
+    "importHelpers": true,
+    "declaration": true
   }
 }

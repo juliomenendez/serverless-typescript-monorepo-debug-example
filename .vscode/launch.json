@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Launch Handler 1",
       "skipFiles": ["<node_internals>/**"],
-      "cwd": "${workspaceFolder}/packages/handler1",
+      "cwd": "${workspaceFolder}/services/handler1",
       "program": "${workspaceRoot}/node_modules/serverless/bin/serverless",
       "args": ["offline", "--noTimeout", "--dontPrintOutput", "--stage=dev"],
       "sourceMaps": true,

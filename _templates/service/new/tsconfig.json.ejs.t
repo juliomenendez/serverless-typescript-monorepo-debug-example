@@ -4,7 +4,9 @@ to: services/<%= h.changeCase.paramCase(name) %>/tsconfig.json
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "outDir": "./.build",
+    "sourceRoot": "./src"
   },
   "include": ["./src/**/*.ts"],
   "exclude": [

@@ -6,7 +6,7 @@ sh: cd packages/<%= h.changeCase.paramCase(name) %> && yarn install
   "name": "@internal/<%= name %>",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": ".build/index.js",
   "scripts": {
     "build": "tsc -b"
   },
